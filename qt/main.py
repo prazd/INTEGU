@@ -34,6 +34,7 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_MainWindow):
         self.phoneOrInternet.setText("")
         self.directions.setText("")
         self.fines.setText("")
+        self.fun.setText("")
         self.otherExpenses.setText("")
 
     def Run(self):
