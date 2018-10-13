@@ -35,7 +35,7 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_MainWindow):
         self.otherExpenses.setText("")
 
     def Check(self):
-        print("CHECK")
+        print(self.inpWage.text())
 
 def main():
         app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
