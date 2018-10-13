@@ -20,13 +20,22 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_MainWindow):
         self.inpCashback.setText("")
         self.inpSaving.setText("")
         self.anotherIncome.setText("")
+        #################
+        self.utilities.setText("")
+        self.rentalOfProperty.setText("")
+        self.loanRepayment.setText("")
+        self.education.setText("")
+        self.healthCare.setText("")
+        self.nutrion.setText("")
+        self.clothing.setText("")
+        self.housewares.setText("")
+        self.phoneOrInternet.setText("")
+        self.directions.setText("")
+        self.fines.setText("")
+        self.otherExpenses.setText("")
 
-        
     def Check(self):
         print("CHECK")
-        
-
-
 
 def main():
         app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
