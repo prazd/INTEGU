@@ -12,13 +12,14 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.Check)
 
     def Clear(self):
-        self.inpMonthIncome.setText("")
+        # self.inpMonthIncome.setText("")
         self.inpWage.setText("")
         self.inpParrentWage.setText("")
         self.inpRent.setText("")
         self.inpAllowance.setText("")
         self.inpCashback.setText("")
         self.inpSaving.setText("")
+        self.anotherIncome.setText("")
 
         
     def Check(self):
