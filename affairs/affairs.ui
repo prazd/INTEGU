@@ -232,7 +232,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QListWidget" name="sListWidget_2">
+   <widget class="QListWidget" name="tListWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -242,7 +242,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QListWidget" name="tListWidget">
+   <widget class="QListWidget" name="sListWidget">
     <property name="geometry">
      <rect>
       <x>520</x>
