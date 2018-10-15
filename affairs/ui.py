@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'affairs.ui'
 #
-# Created by: PyQt5 UI code generator 5.7
+# Created by: PyQt5 UI code generator 5.9
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,24 +11,24 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Affairs(object):
     def setupUi(self, Affairs):
         Affairs.setObjectName("Affairs")
-        Affairs.resize(846, 600)
+        Affairs.resize(1550, 923)
         self.centralwidget = QtWidgets.QWidget(Affairs)
         self.centralwidget.setObjectName("centralwidget")
         self.Run = QtWidgets.QPushButton(self.centralwidget)
-        self.Run.setGeometry(QtCore.QRect(310, 360, 161, 71))
+        self.Run.setGeometry(QtCore.QRect(710, 550, 161, 71))
         self.Run.setObjectName("Run")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(90, 20, 741, 141))
+        self.label.setGeometry(QtCore.QRect(560, 10, 741, 141))
         self.label.setObjectName("label")
         self.affair = QtWidgets.QLineEdit(self.centralwidget)
-        self.affair.setGeometry(QtCore.QRect(100, 190, 191, 32))
+        self.affair.setGeometry(QtCore.QRect(210, 230, 191, 41))
         self.affair.setText("")
         self.affair.setObjectName("affair")
         self.add = QtWidgets.QPushButton(self.centralwidget)
-        self.add.setGeometry(QtCore.QRect(670, 190, 94, 32))
+        self.add.setGeometry(QtCore.QRect(1150, 260, 131, 51))
         self.add.setObjectName("add")
         self.impWidget = QtWidgets.QWidget(self.centralwidget)
-        self.impWidget.setGeometry(QtCore.QRect(370, 180, 101, 80))
+        self.impWidget.setGeometry(QtCore.QRect(590, 200, 101, 80))
         self.impWidget.setObjectName("impWidget")
         self.fNo = QtWidgets.QRadioButton(self.impWidget)
         self.fNo.setGeometry(QtCore.QRect(60, 20, 21, 25))
@@ -48,7 +48,7 @@ class Ui_Affairs(object):
         self.label_3.setGeometry(QtCore.QRect(60, 50, 31, 20))
         self.label_3.setObjectName("label_3")
         self.urgWidget = QtWidgets.QWidget(self.centralwidget)
-        self.urgWidget.setGeometry(QtCore.QRect(520, 180, 120, 80))
+        self.urgWidget.setGeometry(QtCore.QRect(910, 200, 120, 80))
         self.urgWidget.setObjectName("urgWidget")
         self.label_7 = QtWidgets.QLabel(self.urgWidget)
         self.label_7.setGeometry(QtCore.QRect(30, 0, 62, 20))
@@ -68,20 +68,23 @@ class Ui_Affairs(object):
         self.sNo.setText("")
         self.sNo.setObjectName("sNo")
         self.fListWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.fListWidget.setGeometry(QtCore.QRect(10, 260, 256, 141))
+        self.fListWidget.setGeometry(QtCore.QRect(440, 410, 241, 111))
         self.fListWidget.setObjectName("fListWidget")
         self.tListWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.tListWidget.setGeometry(QtCore.QRect(10, 420, 256, 141))
+        self.tListWidget.setGeometry(QtCore.QRect(500, 770, 241, 111))
         self.tListWidget.setObjectName("tListWidget")
         self.sListWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.sListWidget.setGeometry(QtCore.QRect(520, 260, 256, 141))
+        self.sListWidget.setGeometry(QtCore.QRect(910, 410, 231, 111))
         self.sListWidget.setObjectName("sListWidget")
         self.lListWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.lListWidget.setGeometry(QtCore.QRect(520, 420, 256, 141))
+        self.lListWidget.setGeometry(QtCore.QRect(860, 770, 231, 111))
         self.lListWidget.setObjectName("lListWidget")
         self.clear = QtWidgets.QPushButton(self.centralwidget)
-        self.clear.setGeometry(QtCore.QRect(310, 440, 161, 71))
+        self.clear.setGeometry(QtCore.QRect(710, 660, 161, 71))
         self.clear.setObjectName("clear")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(280, 190, 111, 41))
+        self.label_8.setObjectName("label_8")
         Affairs.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(Affairs)
         self.statusbar.setObjectName("statusbar")
@@ -109,4 +112,5 @@ class Ui_Affairs(object):
         self.label_4.setText(_translate("Affairs", "Да"))
         self.label_5.setText(_translate("Affairs", "Нет"))
         self.clear.setText(_translate("Affairs", "Сбросить"))
+        self.label_8.setText(_translate("Affairs", "Задача"))
 

@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QMessageBox
 import ui
 from functools import reduce
 
-class ExampleApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
+class AffairsApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
     def __init__(self):
         super().__init__()
         self.setupUi(self) 
@@ -115,7 +115,8 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
         
 def main():
         app = QtWidgets.QApplication(sys.argv)  
-        window = ExampleApp()  
+        window = AffairsApp()  
+        window.setStyleSheet("QMainWindow {background:  url(money.jpg);}");
         window.show() 
         app.exec_()  
 

@@ -160,7 +160,8 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_MainWindow):
 
 def main():
         app = QtWidgets.QApplication(sys.argv)  
-        window = ExampleApp()  
+        window = ExampleApp() 
+        window.setStyleSheet("QMainWindow {background:  url(work.jpg);}"); 
         window.show() 
         app.exec_()  
 
