@@ -79,6 +79,9 @@ class Ui_Affairs(object):
         self.lListWidget = QtWidgets.QListWidget(self.centralwidget)
         self.lListWidget.setGeometry(QtCore.QRect(520, 420, 256, 141))
         self.lListWidget.setObjectName("lListWidget")
+        self.clear = QtWidgets.QPushButton(self.centralwidget)
+        self.clear.setGeometry(QtCore.QRect(310, 440, 161, 71))
+        self.clear.setObjectName("clear")
         Affairs.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(Affairs)
         self.statusbar.setObjectName("statusbar")
@@ -105,4 +108,5 @@ class Ui_Affairs(object):
         self.label_7.setText(_translate("Affairs", "Срочно"))
         self.label_4.setText(_translate("Affairs", "Да"))
         self.label_5.setText(_translate("Affairs", "Нет"))
+        self.clear.setText(_translate("Affairs", "Сбросить"))
 
