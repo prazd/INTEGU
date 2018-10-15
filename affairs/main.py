@@ -10,6 +10,7 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
         self.setupUi(self) 
         self.add.clicked.connect(self.AddAffair)
         self.Run.clicked.connect(self.Result)
+        self.clear.clicked.connect(self.Clear)
     
     def AddAffair(self):
         if len(self.affair.text()) == 0:
@@ -82,7 +83,7 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
             return
         
         fCheck = fCount == 0 or fCount == 1
-        sCheck = sCount > tCount
+        sCheck = sCount > tCount and sCount >= 4 and tCount >= 2
         lCheck = lCount == 0 or lCount == 1
 
         if fCheck == True and sCheck == True and lCheck == True:
@@ -101,7 +102,12 @@ class ExampleApp(QtWidgets.QMainWindow, ui.Ui_Affairs):
             QMessageBox.about(self, "Результат",self.lastAnswer)
             return
 
-        # Clean Button ...
+    def Clear(self):
+        # pass
+        self.fListWidget.clear()
+        self.sListWidget.clear()
+        self.tListWidget.clear()
+        self.lListWidget.clear()
 
        
 
